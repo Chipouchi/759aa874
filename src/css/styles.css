@@ -1,0 +1,143 @@
+#app {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  #app .container {
+    width: 376px;
+    height: 666px;
+    z-index: 100;
+  
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  }
+  
+  #app .container-view {
+    padding: 20px;
+  }
+  
+  html, body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+  }
+  
+  body {
+    margin: 1rem;
+    background: #233142;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 13px;
+    color: #333333;
+    line-height: 1;
+  }
+  .listItem {
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensure it's above other content */
+  }
+  
+  .detailsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeContainer {
+    width: 30%;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 16px;
+    text-align: right;
+  }
+  .phoneIconContainer { 
+    border-right: 1px solid #e0e0e0;
+    padding-right: 16px;
+    width: 10%;
+    text-align: center;
+  }
+  .phoneDetailsContainer {
+    margin-left: 15px;
+  }
+  .MuiTabs-indicator {
+    display: none !important;
+  }
+  .expandableContent {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 100%; /* Position it below the listItem */
+    left: 0;
+    z-index: 0; /* Lower z-index so it's below listItem */
+  }
+  .footer {
+    background-color: #f0f0f0;
+    padding: 8px;
+    position: relative;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-icon-button {
+    margin: 8px;
+  }
+  
+  .big-button-container {
+    position: absolute;
+    top: -20px; /* Adjust overlap amount */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .big-button {
+    background-color: #4caf50;
+    border-radius: 50%;
+    padding: 20px;
+    min-width: 70px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .big-button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+  }
+  .header-toolbar {
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .divider {
+    position: relative;
+    margin: 0px;
+  }
+  .tabs{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+  }
+  
